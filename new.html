@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">The Planets</div>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars fa-2x" id="buton"></i>
+        </div>
+
+        
+        <ul class="liste">
+            <li><a href="#">Sun</a></li>
+            <li><a href="#">Mercury</a></li>
+            <li><a href="#">Venus</a></li>
+            <li><a href="#">Earth</a></li>
+            <li><a href="#">Mars</a></li>
+            <li><a href="#">Jupiter</a></li>
+            <li><a href="#">Saturn</a></li>
+            <li><a href="#">Uranüs</a></li>
+            <li><a href="#">Plüton</a></li>
+        </ul>
+
+       
+
+    </header>
+
+    <!-- Header ends -->
+
+
+    <section class="mainpage">
+        <div class="both">
+
+            <div class="resim">
+            
+            </div>
+
+            <div class="bilgiler">
+                <h1 class="planet">EARTH</h1>
+                <p class="inf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod quibusdam velit doloremque assumenda recusandae consequatur voluptatum dignissimos veniam non eos, optio deserunt cumque explicabo pariatur impedit id. Maxime ipsam aut, ab vitae quis perferendis placeat tempora repudiandae magnam. Dolores!</p>
+                <ul class="üçüzler">
+                    <li>
+                        <a href="#" class="ove">OVERVİEW</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="stc">INTERNAL STRUCTURE</a>
+                    </li>
+
+                    <li>
+                        <a href="#">SURFACE GEOLOGY</a>
+                    </li>
+                </ul> 
+            </div>
+
+        </div>
+
+        <div class="alttakim">
+            <ul class="altliste">
+               <li>
+                   <p class="bilgi1">ROTATION TIME</p>
+                   <p class="bilgi2">1 DAYS</p>
+               </li> 
+
+               <li>
+                <p class="bilgi1">REVALUTION TIME</p>
+                <p class="bilgi2">365.26 DAYS </p>
+               </li> 
+                  
+               <li>
+                   <p class="bilgi1">RADIUS</p>
+                   <p class="bilgi2">6.371 KM</p>
+                </li> 
+                  
+                <li>
+                   <p class="bilgi1">AVERAGE TEMP.</p>
+                   <p class="bilgi2">16°CELCİUS</p>
+                </li> 
+                  
+
+            </ul>
+        </div>    
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>    
+    
+        hamburger =document.querySelector(".hamburger");
+          
+        hamburger.onclick=function(){
+
+            navBar=document.querySelector(".liste");
+            navBar.classList.toggle('active');
+
+        }
+
+        structure=document.querySelector(".stc");
+        structure.onclick=function(){
+
+            resim=document.querySelector(".resim");
+            resim.classList.toggle('active');
+
+      
+        }
+
+
+        ove=document.querySelector(".ove");
+        ove.onclick=function(){
+
+            resim=document.querySelector(".resim");
+            resim.classList.toggle('deactive');
+
+      
+        }
+
+    </script>
+</body>
+</html>

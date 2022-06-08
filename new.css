@@ -1,0 +1,326 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background-color: rgba(7,6,37,255);
+    background-image: url(../again/stars.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+/* Header ends */
+header{
+  
+    
+    height: 7.5vh;
+    width: 100%;
+    padding: 1em 2em;
+    padding-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.75rem;
+    color: white;
+    font-weight: bold;
+}
+
+.hamburger{
+    display: none;
+    color: white;
+}
+
+
+.liste{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.10rem;
+}
+
+.liste li{
+    margin-right: 0.75em;
+}
+
+.liste li a{
+    color: whitesmoke;
+    padding: 0.5em 0.75em ;
+    border-radius: 30px;
+}
+
+.liste li a:hover{
+    color: black;
+    background-color: beige;
+   
+}
+
+
+/* Header ends */
+
+
+.mainpage{
+    width: 100%;
+    height: auto;
+    
+}
+
+.mainpage .both{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainpage .resim{
+    background-image: url(../again/Screenshot_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 50%;
+    height: 70vh; 
+   
+
+
+}
+
+.mainpage .resim.active{
+    background-image: url(../again/Screenshot_2.png);
+}
+
+.mainpage .resim.deactive{
+    background-image: url(../again/Screenshot_1.png);
+}
+
+
+
+.mainpage .bilgiler{
+    width: 50%;
+    margin: auto;
+    margin-bottom:3em;
+    height: 70vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    
+}
+
+
+.mainpage .planet{
+    font-size: 3em;
+    color: white;
+}
+
+.mainpage .bilgiler .inf{
+    color: lightgray;
+    margin-top: 1em;
+    
+}
+
+
+.mainpage .bilgiler .üçüzler li{
+    margin-top: 0.6em;
+    width: 90%;
+    text-align: center;
+    border: 2px solid gray;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+.mainpage .bilgiler .üçüzler li a{
+    color: white;
+    font-weight: 500;
+} 
+
+
+/* aLT TAKIM STARTS  */
+
+
+
+.mainpage .alttakim{
+    width:90%;
+    height: auto;
+    
+    margin: auto;
+    margin-top: 2em;
+}
+
+.mainpage .alttakim .altliste{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mainpage .alttakim .altliste li{
+    border: 1px solid gray;
+    width: 15em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+   
+}
+
+.mainpage .alttakim .altliste li .bilgi1{
+    color: lightgray;
+    
+}
+
+.mainpage .alttakim .altliste li .bilgi2{
+    color: white;
+    font-size: 1.75em;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:900px){
+
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    .liste{
+        height: 0;
+        width: 100vw;
+        position: absolute;
+        top:10vh;
+        left: 0;
+        right: 0;
+        background-color: black;
+        transition: 0.2s;
+        overflow: hidden;
+
+        padding: 0em ;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;  
+    }
+    
+
+    .liste.active{
+        padding: 1em;
+        height: 90vh;
+     }
+
+     /* Navbar ends */
+ 
+
+     /* ZEE */
+
+     .mainpage .both{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+
+    .mainpage .resim{
+        margin-top: 5em;
+        margin-bottom:auto ;
+        
+        width: 90%;
+        height: 50vh;
+      
+
+    }
+
+    .mainpage .bilgiler{
+     
+        width: 90%;
+
+    }
+
+
+
+    .mainpage .planet{
+      
+        text-align: center;
+    }   
+    
+    .mainpage .inf{
+        text-align: center;
+    }
+    
+    .mainpage .bilgiler .üçüzler li{
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+  
+    /* Alt liste */
+    
+
+    .mainpage .alttakim .altliste{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mainpage .alttakim .altliste li{
+        
+        width: 100%;
+        margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+
+    .mainpage .alttakim .altliste li .bilgi2{
+        color: white;
+        font-size: 1.25em;
+        font-weight: bold;
+        
+    }
+    
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
